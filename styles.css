@@ -1,0 +1,75 @@
+/* Estilo general */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('') no-repeat center center fixed; 
+    background-size: cover; /* Asegúrate de que la imagen cubra toda la pantalla */
+}
+
+/* Contenedor del libro */
+#book-container {
+    perspective: 1000px;
+    width: 300px;
+    height: 400px;
+    position: relative;
+}
+
+/* Libro cerrado */
+#book {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    transform-style: preserve-3d;
+    transition: transform 1s ease;
+}
+
+/* Imagen de la portada */
+.cover-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Estilo de las tapas del libro */
+.cover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 5px;
+    cursor: pointer; /* Cambia el cursor al pasar sobre la portada */
+}
+
+.cover.front {
+    z-index: 2;
+    transform-origin: left;
+}
+
+/* Páginas del libro */
+.page {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 5px;
+    display: none; /* Inicialmente ocultas */
+}
+
+/* Contenido de las páginas */
+.content {
+    display: flex; /* Usa flexbox para alinear imagen y texto */
+    align-items: flex-start; /* Alinea el contenido en la parte superior */
+}
+
+/* Imagen pequeña */
+.small-image {
+    width: 130px; /* Ajusta el tamaño de la imagen */
+    height: auto; /* Mantiene la proporción de la imagen */
+    margin-right: 15px; /* Espacio entre la imagen y el texto */
+}

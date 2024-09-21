@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Libro Interactivo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="book-container">
+        <div id="book">
+            <div class="cover front">
+                <img src="https://i.pinimg.com/736x/21/78/6c/21786c24109ed53eb5bf84bac16795b8.jpg" alt="Portada" class="cover-image" onclick="openBook()">
+            </div>
+            <div class="page" id="page1">
+                <h2>Un recuerdo de mi amor</h2>
+                <div class="content">
+                    <img src="https://i.pinimg.com/736x/73/aa/21/73aa21f90ef45225a583e41e3c9b3879.jpg" alt="Imagen 1" class="small-image">
+                    <p>La melancolía de tu ser me causa gran estremecer; tu vida, ajena a la mía, se alineó a la mía, y ahora, bella y triste a la vez, me añoro en la vulnerabilidad que has hecho en mí, por ser la persona a la cual amo y cual, jubilosamente, no desprecio en ningún aspecto.</p>
+                </div>
+                <button onclick="nextPage()">Siguiente</button>
+            </div>
+            <div class="page" id="page2" style="display: none;">
+                <h2>Amo tu ser mismo</h2>
+                <div class="content">
+                    <img src="https://i.pinimg.com/736x/1b/57/52/1b5752de7ec25fb2063ad5c25067d9da.jpg" alt="Imagen 2" class="small-image">
+                    <p>
+                        Te amo sin reproche.<br>
+                        Te amo con todo lo bueno que no logras ver y con todo lo malo que dices tener.<br>
+                        Te amo en cada gesto único de ti.<br>
+                        Te amo sin condiciones.<br>
+                        Te amo con tus imperfecciones.<br>
+                        Te amo com pasión <br>
+                        Te amo y eso es suficiente.
+                    </p>
+                </div>
+                <button onclick="nextPage()">Siguiente</button>
+            </div>
+            
+            <div class="page" id="page3" style="display: none;">
+                <h2>Sentimiento Autentico</h2>
+                <div class="content">
+                    <img src="https://i.pinimg.com/736x/c4/2e/2d/c42e2d47272fd4c01b77ee1870db50a9.jpg" alt="Imagen 3" class="small-image">
+                    <p>Ante ti soy vulnerable y honesto, despojado de mascaras y defensas porque en tu presencia encuentro refugio al cual no temer <br>
+                    Te muestro mis cicatrices y las historias que me han moldeado y  lo hago sin temor o prejuicios ya que en ti encuentro aceptacion <br>
+                    Aqui en este vinculo compartido mis sentimientos son Autenticos y me atevo a mostarte quien realmente soy. 
+                </p>
+                </div>
+                <button onclick="nextPage()">Siguiente</button>
+            </div>
+            <div class="page" id="page4" style="display: none;">
+                <h2>Un momento especial</h2>
+                <div class="content">
+                    <img src="URL_DE_LA_IMAGEN" alt="Imagen 4" class="small-image">
+                    <p>Aquí puedes escribir el texto de la cuarta página.</p>
+                </div>
+                <button onclick="nextPage()">Finalizar</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
